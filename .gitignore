@@ -1,19 +1,19 @@
-# Python cache files
-__pycache__/
-*.py[cod]
-*$py.class
+# Ignore data files
+bugs.csv
+reports/
 
-# Virtual Environment
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environment
 venv/
 env/
 ENV/
 
-# Bug report uploads
-reports/
-
 # OS specific files
 .DS_Store
-Thumbs.db
-
-# CSV data file
-bugs.csv 
+Thumbs.db 

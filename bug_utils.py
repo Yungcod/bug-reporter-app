@@ -5,6 +5,7 @@ from PIL import Image
 import io
 from datetime import datetime
 import random
+import streamlit as st
 
 def generate_bug_id():
     """Creates a short unique ID for the bug"""
@@ -26,6 +27,9 @@ def save_bug_report(report):
     
     # Write back to file
     df.to_csv('bugs.csv', index=False)
+    
+    # Clear the cache to refresh the data
+    load_bugs.clear()
 
 def save_screenshot(screenshot, file_path):
     """Saves uploaded image to the reports folder"""
@@ -37,6 +41,7 @@ def save_screenshot(screenshot, file_path):
     img = Image.open(screenshot)
     img.save(file_path)
 
+@st.cache_data
 def load_bugs():
     """Reads bugs from CSV and sorts by date"""
     if os.path.exists('bugs.csv'):

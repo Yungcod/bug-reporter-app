@@ -1,17 +1,58 @@
+# Bug Reporter
+
+A simple Streamlit application for tracking and managing bug reports.
+
+## Features
+
+- Submit bug reports with title, description, severity, type, and status
+- Upload screenshots for visual bug documentation
+- View all submitted bug reports in a sortable table
+- Filter bug reports by status and type
+- Download individual bug reports as Markdown files
+- View bug statistics and counts by category
+
+## Installation
+
+1. Clone the repository:
+```
+git clone https://github.com/yourusername/bug-reporter-app.git
+cd bug-reporter-app
+```
+
+2. Install the required packages:
+```
+pip install -r requirements.txt
+```
+
+3. Run the application:
+```
+streamlit run app.py
+```
+
 ## How to Use
 
-Open the app in your browser.  
-Fill out the bug report form with title, description, severity, type, status, and your name.  
-Optionally upload a screenshot.  
-After submitting, you can view your report and browse all submitted reports in a table.  
-Reports can be filtered by status and type. Each report can also be downloaded in Markdown format.
+The app will open in your browser. From there you can:
+- Fill out the bug report form with details about the issue
+- Upload a screenshot if available
+- Submit the report
+- View your report and all existing reports in the table below
+- Filter reports by status and type
+- Download any report as a Markdown file
+
+## Project Structure
+
+- `app.py`: Main Streamlit interface
+- `bug_utils.py`: Helper functions for data handling
+- `requirements.txt`: Required Python packages
+
+The app automatically creates:
+- `bugs.csv`: Database file for storing bug reports
+- `reports/`: Directory for storing uploaded screenshots
 
 ## Notes
 
-This app runs entirely locally.  
-It does not use any external APIs or AI services.  
-It's designed to help understand the structure and workflow of basic internal bug reporting systems.  
-It can serve as a foundation for building more advanced QA tools in the future.
+This app runs entirely locally and doesn't use any external services.
+It was designed as a practical tool for internal QA teams.
 
 ## Author
 
