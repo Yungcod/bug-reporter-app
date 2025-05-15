@@ -13,6 +13,13 @@ from bug_utils import (
     generate_random_bug_title
 )
 
+# Clean start for demo mode
+if os.environ.get("CLEAR_BUGS") == "1" and os.path.exists("bugs.csv"):
+    os.remove("bugs.csv")
+    if os.path.exists("reports"):
+        for file in os.listdir("reports"):
+            os.remove(os.path.join("reports", file))
+
 # Main page header
 st.title("Bug Reporter")
 
