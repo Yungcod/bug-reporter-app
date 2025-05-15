@@ -11,6 +11,11 @@ A simple Streamlit application for tracking and managing bug reports.
 - Download individual bug reports as Markdown files
 - View bug statistics and counts by category
 
+
+## Screenshot 
+![image](https://github.com/user-attachments/assets/03533525-5279-4a9c-bbd5-564974c04c67)
+
+
 ## Installation
 
 1. Clone the repository:
