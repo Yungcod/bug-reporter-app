@@ -2,6 +2,9 @@
 
 A simple Streamlit application for tracking and managing bug reports.
 
+
+https://bug-reporter-app.streamlit.app/
+
 ## Features
 
 - Submit bug reports with title, description, severity, type, and status
